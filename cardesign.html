@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fancy Responsive Card Design</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .card-description {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .card-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 15px;
+      background: #af4261;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .card-btn:hover {
+      background: #f3ec78;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      <img src="photo_card.jpg" alt="Card Image">
+      <div class="card-content">
+        <h2 class="card-title">Card Title 1</h2>
+        <p class="card-description">Card Description 1.</p>
+        <a href="#" class="card-btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="photo_card.jpg" alt="Card Image">
+      <div class="card-content">
+        <h2 class="card-title">Card Title 2</h2>
+        <p class="card-description">Card Description 2.</p>
+        <a href="#" class="card-btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="photo_card.jpg" alt="Card Image">
+      <div class="card-content">
+        <h2 class="card-title">Card Title 3</h2>
+        <p class="card-description">Card Description 3.</p>
+        <a href="#" class="card-btn">Learn More</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
